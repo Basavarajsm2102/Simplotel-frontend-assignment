@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 .navbar {
   background-color: #ff7171;
   display: flex;
@@ -9,9 +10,8 @@
   align-items: center;
   height: 5rem;
 }
-.navbar ul li {
-  /*nav-bar items */
 
+.navbar ul li {
   display: inline;
   list-style-type: none;
   padding: 1rem;
@@ -19,31 +19,36 @@
   font-size: 1.2rem;
   margin: 0 1rem 0 1rem;
 }
+
 .fa-reorder {
   font-size: 2rem;
 }
+
 .row {
   display: flex;
   flex-direction: row;
   background-image: linear-gradient(
-    to right bottom,
-    #fff6af,
-    #ffdfa7,
-    #ffc9b5,
-    #ffb9d0,
-    #ffb4ee
+      to right bottom,
+      #fff6af,
+      #ffdfa7,
+      #ffc9b5,
+      #ffb9d0,
+      #ffb4ee
   );
 }
+
 .col1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .col {
   width: 50%;
   height: 90vh;
   text-align: center;
 }
+
 .col .desc {
   display: block;
   font-family: "Oswald", sans-serif;
@@ -51,19 +56,19 @@
   margin-left: 10rem;
   width: 70%;
 }
+
 .col2 {
-  /* object-fit: cover; Scale the image to cover the entire container */
   display: block;
   overflow: hidden;
 }
+
 .col2 img {
   position: relative;
-  height: 50vh;
-  width: 31rem;
-  /* top: -20rem; */
-  left: -6rem;
+  max-width: 100%;
+  height: auto;
   zoom: 2;
 }
+
 .hero-heading {
   display: block;
   font-size: 3rem;
@@ -73,10 +78,12 @@
   letter-spacing: 1rem;
   margin-bottom: 2rem;
 }
+
 .button-div {
   text-align: left;
   margin-left: 10rem;
 }
+
 .click-me {
   background-color: #ff7171;
   border: none;
@@ -86,12 +93,13 @@
 }
 
 .img1 img {
-  width: 250px;
-  height: 190px;
+  width: 100%;
+  height: auto;
 }
+
 .img2 img {
-  width: 250px;
-  height: 400px;
+  width: 100%;
+  height: auto;
 }
 
 .outer-section {
@@ -102,6 +110,7 @@
   align-items: center;
   width: 50%;
 }
+
 .outer-section img {
   padding: 0.5rem;
 }
@@ -112,33 +121,38 @@
   justify-content: center;
   padding: 1rem;
 }
+
 .sec-row .heading {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
 }
+
 .sec-row .lower-heading {
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.3rem;
   font-weight: 500;
 }
+
 .sec-row .click {
   padding-top: 1rem;
   font-family: "Oswald", sans-serif;
 }
+
 .sec-row {
   background-color: #ff7171;
 }
+
 .second-block {
   display: flex;
   flex-direction: row;
   background-image: linear-gradient(
-    to right bottom,
-    #fff6af,
-    #ffdfa7,
-    #ffc9b5,
-    #ffb9d0,
-    #ffb4ee
+      to right bottom,
+      #fff6af,
+      #ffdfa7,
+      #ffc9b5,
+      #ffb9d0,
+      #ffb4ee
   );
 }
 
@@ -149,4 +163,28 @@
   align-items: center;
   height: 1.5rem;
   opacity: 100px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .hero-heading {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+  }
+
+  .col .desc {
+      margin-left: 0;
+      width: 100%;
+  }
+
+  .col2 img {
+      left: 0;
+      width: 100%;
+      zoom: 1;
+  }
+
+  .click-me {
+      margin-top: 1rem;
+      padding: 0.6rem 2rem 0.6rem 2rem;
+  }
 }
